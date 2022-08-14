@@ -57,15 +57,15 @@ const Sidebar = () => {
                   <div
                     key={link.name}
                     className={
-                      router.pathname == `/${link.name}`
+                      router.pathname == `/dashboard/${link.path}`
                         ? "flex items-center gap-5 pr-4 pt-3 pb-2.5 rounded-lg text-white m-2 "
                         : "flex items-center gap-5 pr-4 pt-3 pb-2.5 text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2 "
                     }
                   >
-                    <Link href={`/${link.name}`}>
+                    <Link href={`/dashboard/${link.path}`}>
                       <span onClick={handleCloseSidebar}>{link.icon}</span>
                     </Link>
-                    <Link href={`/${link.name}`}>
+                    <Link href={`/dashboard/${link.path}`}>
                       <span onClick={handleCloseSidebar}>{link.name}</span>
                     </Link>
                   </div>

@@ -35,7 +35,7 @@ import avatar from "./avatar.jpg";
 import avatar2 from "./avatar2.jpg";
 import avatar3 from "./avatar3.png";
 import avatar4 from "./avatar4.jpg";
-import product1 from "./product1.jpg";
+import product1 from "../public/product1.jpg";
 import product2 from "./product2.jpg";
 import product3 from "./product3.jpg";
 import product4 from "./product4.jpg";
@@ -514,7 +514,9 @@ export const links = [
     title: "Dashboard",
     links: [
       {
-        name: "ecommerce",
+        name: "تجارت الکترونیک",
+        path: "Ecommerce",
+
         icon: <FiShoppingBag />,
       },
     ],
@@ -524,15 +526,18 @@ export const links = [
     title: "Pages",
     links: [
       {
-        name: "orders",
+        name: "سفارشات",
+        path: "Orders",
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: "employees",
+        name: "کارکنان",
+        path:"Employees",
         icon: <IoMdContacts />,
       },
       {
-        name: "customers",
+        name: "مشتریان",
+        path:"Costomers",
         icon: <RiContactsLine />,
       },
     ],
@@ -541,19 +546,23 @@ export const links = [
     title: "Apps",
     links: [
       {
-        name: "calendar",
+        name: "تقویم",
+        path:"Calender",
         icon: <AiOutlineCalendar />,
       },
       {
-        name: "kanban",
+        name: "کانبان",
+        path:"Kanban",
         icon: <BsKanban />,
       },
       {
-        name: "editor",
+        name: "ادیتور",
+        path:"Editor",
         icon: <FiEdit />,
       },
       {
         name: "color-picker",
+        path:"ColorPicker",
         icon: <BiColorFill />,
       },
     ],
@@ -562,11 +571,13 @@ export const links = [
     title: "Charts",
     links: [
       {
-        name: "line",
+        name: "لاین چارت",
+        path:"Line",
         icon: <AiOutlineStock />,
       },
       {
-        name: "area",
+        name: "اریا چارت",
+        path:"Area",
         icon: <AiOutlineAreaChart />,
       },
 
@@ -651,38 +662,38 @@ export const earningData = [
     icon: <MdOutlineSupervisorAccount />,
     amount: "39,354",
     percentage: "-4%",
-    title: "Customers",
+    title: "مشتریان",
     iconColor: "#03C9D7",
     iconBg: "#E5FAFB",
-    pcColor: "red-600",
+    pcColor: "#16a34a",
   },
   {
     icon: <BsBoxSeam />,
     amount: "4,396",
     percentage: "+23%",
-    title: "Products",
+    title: "محصولات",
     iconColor: "rgb(255, 244, 229)",
     iconBg: "rgb(254, 201, 15)",
-    pcColor: "green-600",
+    pcColor: "#dc2626",
   },
   {
     icon: <FiBarChart />,
     amount: "423,39",
     percentage: "+38%",
-    title: "Sales",
+    title: "فروش",
     iconColor: "rgb(228, 106, 118)",
     iconBg: "rgb(255, 244, 229)",
 
-    pcColor: "green-600",
+    pcColor: "#dc2626",
   },
   {
     icon: <HiOutlineRefresh />,
     amount: "39,354",
     percentage: "-12%",
-    title: "Refunds",
+    title: "سرمایه گزاری",
     iconColor: "rgb(0, 194, 146)",
     iconBg: "rgb(235, 250, 242)",
-    pcColor: "red-600",
+    pcColor: "#16a34a",
   },
 ];
 
@@ -1468,7 +1479,7 @@ export const customersData = [
 export const employeesData = [
   {
     EmployeeID: 1,
-    Name: "Nancy Davolio",
+    Name: "اکبر",
     Title: "Sales Representative",
     HireDate: "01/02/2021",
     Country: "USA",
@@ -2045,7 +2056,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    ProductImage:
+      "https://barandaz.s3.ir-thr-at1.arvanstorage.com/465-202206141652.jpg",
   },
   {
     OrderID: 345653,
@@ -3059,18 +3071,18 @@ export const stackedCustomSeries = [
     dataSource: stackedChartData[0],
     xName: "x",
     yName: "y",
-    name: "Budget",
+    name: "بودجه",
     type: "StackingColumn",
-    background: "blue",
+    background: "red",
   },
 
   {
     dataSource: stackedChartData[1],
     xName: "x",
     yName: "y",
-    name: "Expense",
+    name: "هزینه",
     type: "StackingColumn",
-    background: "red",
+    background: "#fcba03",
   },
 ];
 
